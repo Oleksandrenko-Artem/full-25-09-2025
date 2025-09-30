@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchSportByIdAsync } from '../store/sportsSlice';
+import CONSTANTS from '../constants';
 
 const Sport = () => {
     const { sportId } = useParams();
@@ -22,7 +23,7 @@ const Sport = () => {
     return (
         <section>
             <h2>{selectedSport?.name}</h2>
-            <img src={selectedSport?.image} />
+            <img src={`${CONSTANTS.API_BASE_URL}${selectedSport?.image}`} alt={selectedSport?.name} />
         </section>
     );
 }

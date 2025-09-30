@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchAllSportsAsync } from '../store/sportsSlice';
+import SportItem from './SportItem';
 
 const SportsList = () => {
     const dispatch = useDispatch();
