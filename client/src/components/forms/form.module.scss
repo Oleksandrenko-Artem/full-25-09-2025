@@ -7,9 +7,12 @@
     label {
         display: flex;
         flex-direction: column;
-    }
-    input {
-        height: 20px;
+        input {
+            height: 20px;
+        }
+        .error {
+            color: red;
+        }
     }
     button {
         color: white;
@@ -18,8 +21,8 @@
         border: 1px solid black;
         border-radius: 10px;
         height: 30px;
-    }
-    button:hover {
-        background: linear-gradient(180deg, rgb(29, 0, 100) 0%, rgb(20, 20, 255) 46%, rgb(16, 159, 255) 85%, rgba(71, 224, 255, 1) 100%);
+        &:hover {
+            background: linear-gradient(180deg, rgb(29, 0, 100) 0%, rgb(20, 20, 255) 46%, rgb(16, 159, 255) 85%, rgba(71, 224, 255, 1) 100%);
+        }
     }
 }
