@@ -23,7 +23,9 @@ const Sport = () => {
     return (
         <section>
             <h2>{selectedSport?.name}</h2>
+            <p>{selectedSport?.isOlimpic ? 'Olimpic' : 'Not olimpic'}</p>
             <img src={`${CONSTANTS.API_BASE_URL}${selectedSport?.image}`} alt={selectedSport?.name} />
+            <button>Update sport</button>
         </section>
     );
 }
